@@ -1,0 +1,31 @@
+******************************************************************************************************************
+
+create database school_db;
+
+******************************************************************************************************************
+
+create table students(student_id int,student_name varchar(50),age int,class int,address varchar(100));
+
+******************************************************************************************************************
+
+insert into students(student_id,student_name,age,class,address) VALUES(1,"Darji Jagrat",16,10,"Ahmdabad");
+
+******************************************************************************************************************
+
+INSERT INTO students VALUES(2,"Panchal Malvika",16,10,"Dehgam");
+INSERT INTO students VALUES(3,"Mehta Amit",17,11,"Mumbai");
+INSERT INTO students VALUES(4,"Patel Anisha",18,12,"Delhi");
+INSERT INTO students VALUES(5,"Panchal Kamini",15,9,"Valsad");
+INSERT INTO students VALUES(6,"Brahman Harshad",12,6,"Modasa");
+
+******************************************************************************************************************
+
+
+student_id	student_name		age	class	address
+--------------------------------------------------------------------
+1 		Darji Jagrat		16	10	Ahmdabad
+2 		Panchal Malvika		16	10 	Dehgam
+3 		Mehta Amit		17	11 	Mumbai
+4 		Patel Anisha		18	12 	Delhi
+5 		Panchal Kamini		15	9 	Valsad
+6 		Brahman Harshad		12	6	Modasa
