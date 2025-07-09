@@ -1,0 +1,74 @@
+******************************************************************************************************************
+
+create database school_db;
+
+******************************************************************************************************************
+
+CREATE TABLE courses (
+    course_id INT NOT NULL,
+    course_name VARCHAR(50),
+    course_credit INT,
+    PRIMARY KEY (course_id)
+);
+
+******************************************************************************************************************
+
+INSERT INTO courses(course_id,course_name,course_credit) VALUES(001,"INformation Technology",40);
+INSERT INTO courses(course_id,course_name,course_credit) VALUES(002,"CA",90);
+INSERT INTO courses(course_id,course_name,course_credit) VALUES(003,"AI intelligence",90);
+INSERT INTO courses(course_id,course_name,course_credit) VALUES(004,"designing",50);
+INSERT INTO courses(course_id,course_name,course_credit) VALUES(005,"software engineer",40);
+
+******************************************************************************************************************
+
+
+course_id	course_name		 course_credit
+
+--------------------------------------------------------------
+
+1 		INformation Technology		60
+2 		CA				90
+3 		Al intelligence			80
+4 		designing			50
+5 		software engineer		40
+
+******************************************************************************************************************
+
+ALTER TABLE courses
+ADD course_duration varchar(50);
+
+******************************************************************************************************************
+
+update courses
+set course_duration="Six mounth"
+where course_id=001;
+
+******************************************************************************************************************
+
+
+course_id	course_name			course_credit		course_duration
+
+---------------------------------------------------------------------------------------------
+1 		Information Technology			40		Six mounth
+2 		CA					90		one year
+3 		Al intelligence				90		two Year
+4 		designing				50		2 year
+5 		software engineer			40		one mounth
+
+******************************************************************************************************************
+
+update courses set course_duration="Two Years" WHERE course_id=001;
+
+******************************************************************************************************************
+
+course_id	course_name			course_credit		course_duration
+
+---------------------------------------------------------------------------------------------
+1 		Information Technology			40		Two Years
+2 		CA					90		one year
+3 		Al intelligence				90		two Year
+4 		designing				50		2 year
+5 		software engineer			40		one mounth
+
+******************************************************************************************************************
+
