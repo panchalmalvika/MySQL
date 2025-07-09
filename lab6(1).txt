@@ -1,0 +1,35 @@
+******************************************************************************************************************
+
+create database school_db;
+
+******************************************************************************************************************
+
+create table teachers(teacher_id int,teacher_name varchar(50),subject varchar(20),email varchar(100));
+
+******************************************************************************************************************
+
+insert into teachers(teacher_id,teacher_name,subject,email) VALUES(001,"Panchal Kamini","Maths","kamini@gmail.com");
+
+******************************************************************************************************************
+
+INSERT INTO teachers VALUES(002,"Patel Anisha","Geography","anisha@gmail.com");
+INSERT INTO teachers VALUES(003,"Brahman Jagrat","English","jagrat@gmail.com");
+INSERT INTO teachers VALUES(004,"Polara Manthan","Gaming","manthan@gmail.com");
+INSERT INTO teachers VALUES(005,"Darji Amit","Hindi","amit@gmail.com");
+
+******************************************************************************************************************
+
+
+teacher_id 	teacher_name		subject 	email
+----------------------------------------------------------------------------------
+1 		Panchal Kamini		Maths		kamini@gmail.com
+2 		Patel Anisha		Geography 	anisha@gmail.com
+3 		Brahman Jagrat		English		jagrat@gmail.com
+4 		Polara Manthan		Gaming		manthan@gmail.com
+5 		Darji Amit		Hindi		amit@gmail.com
+
+******************************************************************************************************************
+
+drop table teachers;
+
+******************************************************************************************************************
